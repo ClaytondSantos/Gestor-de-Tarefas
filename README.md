@@ -1,64 +1,68 @@
-# Gestor de Tarefas - Modo 2 (RESTful)
 
-Este projeto é um sistema de gestão de tarefas construído com Node.js, Express e PostgreSQL,
-seguindo o estilo arquitetural RESTful.
-Ele permite criar, listar, atualizar e deletar tarefas via API.
-# Funcionalidades
+# Task Manager - Mode 2 (RESTful)
 
-- Listar todas as tarefas (`GET /tarefas`)
-- Criar nova tarefa (`POST /tarefas`)
-- Atualizar tarefa existente (`PUT /tarefas/:id`)
-- Deletar uma tarefa (`DELETE /tarefas/:id`)
+This project is a task management system built with Node.js, Express, and PostgreSQL,
+following the RESTful architectural style.
+It allows creating, listing, updating, and deleting tasks via API.
 
-## Tecnologias Utilizadas
+## Features
 
-- Node.js
-- Express
-- PostgreSQL
-- `pg` (cliente PostgreSQL)
-- `dotenv` (variáveis de ambiente)
-- `cors` (permite requisições entre domínios)
-- `nodemon` (reload automático durante o desenvolvimento)
-# Estrutura de Pastas
+* List all tasks (`GET /task`)
+* Create a new task (`POST /task`)
+* Update an existing task (`PUT /task/:id`)
+* Delete a task (`DELETE /task/:id`)
+
+## Technologies Used
+
+* Node.js
+* Express
+* PostgreSQL
+* `pg` (PostgreSQL client)
+* `dotenv` (environment variables)
+* `cors` (enables cross-origin requests)
+* `nodemon` (automatic server reload during development)
+
+## Folder Structure
 
 Modo 2/
 │
 ├── src/
-│ ├── config/ - Conexão com o banco de dados
-│ ├── controllers/ - Lógica das rotas (tarefasController.js)
-│ ├── models/ - Acesso ao banco de dados (tarefasModel.js)
-│ ├── routes/ - Rotas da API
-│ ├── app.js - Inicializa o Express
+│   ├── config/         - Database connection
+│   ├── controllers/    - Route logic (tarefasController.js)
+│   ├── models/         - Database access (tarefasModel.js)
+│   ├── routes/         - API routes
+│   ├── app.js          - Initializes Express
 │
-├── server.js - Inicia o servidor
-├── .env - Variáveis de ambiente
-├── .gitigone - Ignorados pelo Git
-├── package.json - Dependências e scripts
-├── README.md - Documentação do projeto
+├── server.js           - Starts the server
+├── .env                - Environment variables
+├── .gitignore          - Files ignored by Git
+├── package.json        - Dependencies and scripts
+├── README.md           - Project documentation
 
 
-# Instalaçao 
+## Install
+
+
 npm init -y
 npm install express pg cors
-npm install pg
-npm install dotenv  
+npm install dotenv
 npm install nodemon
 npm install -g nodemon
 
-# .env
+
+## .env File
+
+env
 DB_HOST=
 DB_USER=
 DB_PASSWORD=
-DB_NAME= 
-DB_PORT= 
-PORT =
+DB_NAME=
+DB_PORT=
+PORT=
 
-# Execuçao, Inicializar o servidor
+
+## Running the Server
+
 nodemon server.js
-
-
-
-
-
 
 
